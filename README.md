@@ -1,4 +1,4 @@
-# Blaxel Agent - Social Post Generator
+# Blaxel Agent - Template Social Post Generator
 
 <p align="center">
   <img src="https://blaxel.ai/logo.png" alt="Blaxel"/>
@@ -47,25 +47,40 @@ Perfect for content creators, marketers, and developers looking to automate thei
 ## Getting Started
 
 ### Prerequisites
-- Node.js installed
-- Blaxel CLI
-- Blaxel workspace (on blaxel.ai)
+- **Node.js:** v18 or later.
+- **Blaxel CLI:** Ensure you have the Blaxel CLI installed. If not, install it globally:
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/beamlit/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
+  ```
+- **Blaxel login:** Login to Blaxel platform
+  ```bash
+    bl login YOUR-WORKSPACE
+  ```
 
-### Local Development
+### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/beamlit/tpl-social-post-generator.git
-cd tpl-social-post-generator
-```
+- **Clone the repository and install the dependencies**:
+
+  ```bash
+  git clone https://github.com/beamlit/template-social-post-generator.git
+  cd template-social-post-generator
+  npm install
+  ```
 
 2. Install dependencies and start the server:
 ```bash
 npm install
-npm run serve
 ```
 
-The server will start on port 1338. You can test the agent using the Blaxel CLI:
+
+## Running the Server Locally
+
+Start the development server with hot reloading using the Beamlit CLI command:
+
+```bash
+bl serve --hotrealod
+```
+_Note:_ This command starts the server and enables hot reload so that changes to the source code are automatically reflected.
 
 ```bash
 blaxel run agent my-agent --local --data '{"inputs":"MCP Server"}'
@@ -73,11 +88,10 @@ OR
 blaxel chat my-agent --local
 ```
 
-### Deployment to Blaxel
+### Deploying to Blaxel
 
 #### Option 1: From Local Repository
 ```bash
-blaxel login my-workspace
 blaxel deploy
 ```
 
@@ -96,6 +110,11 @@ src/
 ├── prompt.txt        # Main prompt template
 └── functions/        # Custom function definitions
     └── webcrawl.ts   # Web crawling functionality
+documents/            # Sample documents for knowledge base
+.blaxel/              # Blaxel configuration files
+index.ts              # Main application entry point
+tsconfig.json         # TypeScript configuration
+package.json          # Project dependencies and scripts
 ```
 
 ## Customization
@@ -137,4 +156,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-- src/functions/webcrawl.ts : Custom function to crawl a web page
