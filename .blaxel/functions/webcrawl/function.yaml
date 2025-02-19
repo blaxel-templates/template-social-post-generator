@@ -1,0 +1,13 @@
+apiVersion: blaxel.ai/v1alpha1
+kind: Function
+metadata:
+  name: webcrawl
+  displayName: webcrawl
+  labels:
+    x-blaxel-auto-generated: "true"
+spec:
+  description: Crawl a website and return the content in markdown format
+  parameters:
+    - name: url
+      type: string
+      description: The URL of the website to crawl
