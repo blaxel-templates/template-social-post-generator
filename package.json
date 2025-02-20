@@ -14,7 +14,7 @@
   "author": "cdrappier",
   "license": "MIT",
   "dependencies": {
-    "@blaxel/sdk": "^0.0.64-alpha.90",
+    "@blaxel/sdk": "^0.0.65-alpha.90",
     "@langchain/anthropic": "^0.3.12",
     "@langchain/cohere": "^0.3.2",
     "@langchain/deepseek": "^0.0.1",
