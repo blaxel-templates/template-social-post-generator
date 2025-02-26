@@ -56,6 +56,7 @@ spec:
     - Skip articles if content exceeds 100,000 characters
 
     - Use only information from the searched and crawled content
+  repository: null
   functions:
     - webcrawl
     - blaxel-search

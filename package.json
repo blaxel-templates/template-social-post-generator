@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx tsx --tsconfig=tsconfig.json index.ts",
     "dev": "npx tsx --tsconfig=tsconfig.json --watch index.ts",
+    "pinstall": "npx pnpm install",
     "build": "tsc",
     "deploy": "blaxel deploy",
     "serve": "blaxel serve --hotreload"
@@ -14,17 +15,21 @@
   "author": "cdrappier",
   "license": "MIT",
   "dependencies": {
-    "@blaxel/sdk": "^0.0.69-alpha.100",
+    "@blaxel/sdk": "^0.0.70-dev.1",
     "@langchain/anthropic": "^0.3.12",
     "@langchain/cohere": "^0.3.2",
+    "@langchain/core": "^0.3.40",
     "@langchain/deepseek": "^0.0.1",
     "@langchain/langgraph": "^0.2.41",
     "@langchain/mistralai": "^0.2.0",
     "@langchain/openai": "^0.3.17",
     "@langchain/xai": "^0.0.1",
+    "axios": "^1.8.1",
+    "fastify": "^5.2.1",
     "html-to-markdown": "^1.0.0",
     "showdown": "^2.1.0",
-    "turndown": "^7.2.0"
+    "turndown": "^7.2.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
