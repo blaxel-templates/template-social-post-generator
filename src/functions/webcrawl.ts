@@ -39,11 +39,14 @@ const webCrawl = async (data: { url: string }) => {
 
 export default wrapFunction(webCrawl, {
   description: "Crawl a website and return the content in markdown format",
-  parameters: [
-    {
-      name: "url",
-      type: "string",
-      description: "The URL of the website to crawl",
+  schema: {
+    type: "object",
+    properties: {
+      url: {
+        type: "string",
+        description: "The URL of the website to crawl",
+      },
     },
-  ],
+    required: ["url"],
+  },
 });
