@@ -11,6 +11,6 @@ metadata:
   name: blaxel-search
 spec:
   integrationConnections:
-  - blaxel-search
+    - blaxel-search-integration
   runtime:
     type: mcp
