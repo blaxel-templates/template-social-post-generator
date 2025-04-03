@@ -1,4 +1,3 @@
-name = "social-post-generator"
 type = "agent"
 
 functions = ["blaxel-search"]
