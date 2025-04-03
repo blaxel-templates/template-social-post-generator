@@ -1,0 +1,5 @@
+name = "social-post-generator"
+type = "agent"
+
+functions = ["blaxel-search"]
+models = ["sandbox-openai"]
