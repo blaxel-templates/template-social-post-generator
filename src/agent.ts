@@ -12,7 +12,7 @@ export default async function agent(
   stream: Stream
 ): Promise<void> {
   const platformTools = await blTools(["blaxel-search"]).ToVercelAI();
-  const model = await blModel("gpt-4o-mini").ToVercelAI();
+  const model = await blModel("sandbox-openai").ToVercelAI();
 
   const system = fs.readFileSync('./src/prompt.md', 'utf8');
   const response = await generateText({
