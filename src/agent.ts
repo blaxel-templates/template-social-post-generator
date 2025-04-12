@@ -14,7 +14,7 @@ export default async function agent(
   const platformTools = await blTools(["blaxel-search"]).ToVercelAI();
   const model = await blModel("sandbox-openai").ToVercelAI();
 
-  const system = fs.readFileSync('./src/prompt.md', 'utf8');
+  const system = fs.readFileSync("./src/prompt.md", "utf8");
   const response = await generateText({
     experimental_telemetry: { isEnabled: true },
     model,
@@ -26,6 +26,6 @@ export default async function agent(
     messages: [{ role: "user", content: input }],
     maxSteps: 5,
   });
-  stream.write(response.text)
+  stream.write(response.text);
   stream.end();
 }
