@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.2.5",
-    "@blaxel/sdk": "0.1.6",
+    "@blaxel/sdk": "0.1.8",
     "ai": "^4.1.61",
     "axios": "^1.8.4",
     "fastify": "^5.2.2",
