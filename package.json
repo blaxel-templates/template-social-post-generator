@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.2.5",
-    "@blaxel/sdk": "0.1.9",
+    "@blaxel/sdk": "0.1.11",
+    "@opentelemetry/instrumentation-fastify": "^0.45.0",
     "ai": "^4.1.61",
     "axios": "^1.8.4",
     "fastify": "^5.2.2",

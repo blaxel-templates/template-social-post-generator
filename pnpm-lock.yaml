@@ -12,8 +12,11 @@ importers:
         specifier: ^1.2.5
         version: 1.3.6(zod@3.24.2)
       '@blaxel/sdk':
-        specifier: 0.1.9
-        version: 0.1.9(1c8600e26ef3246c80aa51fcc97f9bbc)
+        specifier: 0.1.11
+        version: 0.1.11(825ff9f93b4b355dfb48744103e0f132)
+      '@opentelemetry/instrumentation-fastify':
+        specifier: ^0.45.0
+        version: 0.45.0(@opentelemetry/api@1.9.0)
       ai:
         specifier: ^4.1.61
         version: 4.2.10(react@19.1.0)(zod@3.24.2)
@@ -256,8 +259,8 @@ packages:
   '@aws-sdk/util-utf8-browser@3.259.0':
     resolution: {integrity: sha512-UvFa/vR+e19XookZF8RzFZBrw2EUkQWxiBW0yYQAhvk3C+QVGl0H3ouca8LDBlBfQKXwmW3huo/59H8rwb1wJw==}
 
-  '@blaxel/sdk@0.1.9':
-    resolution: {integrity: sha512-U4AQCXHXNf4tQhuVq+SUj9WSk1GPcEDdamrRP97yf/azNeuHMZucrUPL6pbsESmllOpjZi5U1r6FXQvS/eHu6A==}
+  '@blaxel/sdk@0.1.11':
+    resolution: {integrity: sha512-vR7d/CMF0GYyM9Sn/z9Hvmlnvs+X05tm5TDhCb8JhT+pTChiMdx1xwdligwvNqvZCmPeLZcIJfiKDlhkwW48SQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@ai-sdk/anthropic': ^1.2.9
@@ -732,9 +735,9 @@ packages:
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
 
-  '@opentelemetry/instrumentation-fastify@0.44.2':
-    resolution: {integrity: sha512-arSp97Y4D2NWogoXRb8CzFK3W2ooVdvqRRtQDljFt9uC3zI6OuShgey6CVFC0JxT1iGjkAr1r4PDz23mWrFULQ==}
-    engines: {node: '>=14'}
+  '@opentelemetry/instrumentation-fastify@0.45.0':
+    resolution: {integrity: sha512-m94anTFZ6jpvK0G5fXIiq1sB0gCgY2rAL7Cg7svuOh9Roya2RIQz2E5KfCsO1kWCmnHNeTo7wIofoGN7WLPvsA==}
+    engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
 
@@ -2901,7 +2904,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@blaxel/sdk@0.1.9(1c8600e26ef3246c80aa51fcc97f9bbc)':
+  '@blaxel/sdk@0.1.11(825ff9f93b4b355dfb48744103e0f132)':
     dependencies:
       '@hey-api/client-fetch': 0.5.7
       '@modelcontextprotocol/sdk': 1.9.0
@@ -2944,7 +2947,7 @@ snapshots:
       '@llamaindex/mistral': 0.0.14(zod@3.24.2)
       '@llamaindex/openai': 0.1.61(ws@8.18.1)(zod@3.24.2)
       '@opentelemetry/instrumentation-express': 0.48.0(@opentelemetry/api@1.9.0)
-      '@opentelemetry/instrumentation-fastify': 0.44.2(@opentelemetry/api@1.9.0)
+      '@opentelemetry/instrumentation-fastify': 0.45.0(@opentelemetry/api@1.9.0)
       '@traceloop/instrumentation-anthropic': 0.12.0(@opentelemetry/api@1.9.0)
       '@traceloop/instrumentation-azure': 0.12.0(@opentelemetry/api@1.9.0)
       '@traceloop/instrumentation-bedrock': 0.12.0(@opentelemetry/api@1.9.0)
@@ -3328,7 +3331,6 @@ snapshots:
   '@opentelemetry/api-logs@0.200.0':
     dependencies:
       '@opentelemetry/api': 1.9.0
-    optional: true
 
   '@opentelemetry/api-logs@0.56.0':
     dependencies:
@@ -3354,7 +3356,6 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/semantic-conventions': 1.32.0
-    optional: true
 
   '@opentelemetry/exporter-logs-otlp-grpc@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -3414,15 +3415,14 @@ snapshots:
       - supports-color
     optional: true
 
-  '@opentelemetry/instrumentation-fastify@0.44.2(@opentelemetry/api@1.9.0)':
+  '@opentelemetry/instrumentation-fastify@0.45.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.0)
-      '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.0.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/instrumentation': 0.200.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/semantic-conventions': 1.32.0
     transitivePeerDependencies:
       - supports-color
-    optional: true
 
   '@opentelemetry/instrumentation-http@0.57.2(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -3454,7 +3454,6 @@ snapshots:
       shimmer: 1.2.1
     transitivePeerDependencies:
       - supports-color
-    optional: true
 
   '@opentelemetry/instrumentation@0.56.0(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -3554,8 +3553,7 @@ snapshots:
 
   '@opentelemetry/semantic-conventions@1.28.0': {}
 
-  '@opentelemetry/semantic-conventions@1.32.0':
-    optional: true
+  '@opentelemetry/semantic-conventions@1.32.0': {}
 
   '@protobufjs/aspromise@1.1.2': {}
 
