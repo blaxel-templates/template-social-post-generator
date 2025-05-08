@@ -1,4 +1,4 @@
-import { blModel, blTools } from "@blaxel/sdk";
+import { blModel, blTools } from "@blaxel/vercel";
 import { generateText } from "ai";
 import fs from "fs";
 import { webcrawl } from "./functions/webcrawl";
@@ -11,8 +11,8 @@ export default async function agent(
   input: string,
   stream: Stream
 ): Promise<void> {
-  const platformTools = await blTools(["blaxel-search"]).ToVercelAI();
-  const model = await blModel("sandbox-openai").ToVercelAI();
+  const platformTools = await blTools(["blaxel-search"]);
+  const model = await blModel("sandbox-openai");
 
   const system = fs.readFileSync("./src/prompt.md", "utf8");
   const response = await generateText({

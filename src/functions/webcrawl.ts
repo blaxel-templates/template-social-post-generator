@@ -1,4 +1,3 @@
-import { logger } from "@blaxel/sdk";
 import { tool } from "ai";
 import axios from "axios";
 //@ts-ignore
@@ -25,7 +24,7 @@ export const webcrawl = tool({
   }),
   execute: async (args: { url: string }) => {
     try {
-      logger.info(`Entering webCrawl with url ${args.url}`);
+      console.info(`Entering webCrawl with url ${args.url}`);
       const response = await axios.get(args.url);
   
       const cleanedHtml = response.data
@@ -35,7 +34,7 @@ export const webcrawl = tool({
       var turndownService = new TurndownService();
       const markdown = turndownService.turndown(cleanedHtml);
       const truncatedMarkdown = markdown.slice(0, 10000);
-      logger.info(
+      console.info(
         `Webcrawl finished the page with a total content length of ${truncatedMarkdown.length}`
       );
       return truncatedMarkdown;
