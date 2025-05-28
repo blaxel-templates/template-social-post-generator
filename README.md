@@ -4,8 +4,8 @@
   <img src="https://blaxel.ai/logo.png" alt="Blaxel"/>
 </p>
 
-A powerful agent template for automated social media post generation.  
-This template provides a production-ready foundation for creating engaging, contextual social media content by processing URLs or themes as input.  
+A powerful agent template for automated social media post generation.
+This template provides a production-ready foundation for creating engaging, contextual social media content by processing URLs or themes as input.
 Perfect for content creators, marketers, and developers looking to automate their social media workflows.
 
 ## Table of Contents
@@ -35,7 +35,7 @@ Perfect for content creators, marketers, and developers looking to automate thei
 ### URL-based Post Generation
 **Input:** https://blaxel.ai
 
-**Output:** 
+**Output:**
 🚀 Ready to elevate your AI game? Blaxel is your all-in-one platform for building and deploying generative AI agents! With tools for Python and TypeScript, you can iterate, evaluate, and deploy seamlessly. Enjoy real-time monitoring, secure endpoints, and a user-friendly console. Start for free and explore plans tailored for developers and teams. Don't miss out—[get started today](https://app.blaxel.ai)!
 
 ### Theme-based Post Generation
@@ -50,7 +50,7 @@ Perfect for content creators, marketers, and developers looking to automate thei
 - **Node.js:** v18 or later.
 - **Blaxel CLI:** Ensure you have the Blaxel CLI installed. If not, install it globally:
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/beamlit/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
+  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
   ```
 - **Blaxel login:** Login to Blaxel platform
   ```bash
@@ -62,7 +62,7 @@ Perfect for content creators, marketers, and developers looking to automate thei
 - **Clone the repository and install the dependencies**:
 
   ```bash
-  git clone https://github.com/beamlit/template-social-post-generator.git
+  git clone https://github.com/blaxel-ai/template-social-post-generator.git
   cd template-social-post-generator
   npm install
   ```
