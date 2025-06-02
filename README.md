@@ -1,158 +1,241 @@
-# Blaxel Agent - Template Social Post Generator
+# Blaxel Social Post Generator Agent
 
 <p align="center">
-  <img src="https://blaxel.ai/logo.png" alt="Blaxel"/>
+  <img src="https://blaxel.ai/logo.png" alt="Blaxel" width="200"/>
 </p>
 
-A powerful agent template for automated social media post generation.
-This template provides a production-ready foundation for creating engaging, contextual social media content by processing URLs or themes as input.
-Perfect for content creators, marketers, and developers looking to automate their social media workflows.
+<div align="center">
 
-## Table of Contents
-- [Features](#features)
-- [Example Results](#example-results)
-  - [URL-based Post Generation](#url-based-post-generation)
-  - [Theme-based Post Generation](#theme-based-post-generation)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Local Development](#local-development)
-  - [Deployment to Blaxel](#deployment-to-blaxel)
-- [Project Structure](#project-structure)
-- [Customization](#customization)
-- [How it works](#how-it-works)
-- [Contributing](#contributing)
-- [License](#license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js 18+](https://img.shields.io/badge/node-18+-green.svg)](https://nodejs.org/en/download)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8+-blue.svg)](https://www.typescriptlang.org/)
+[![AI SDK](https://img.shields.io/badge/AI_SDK-powered-brightgreen.svg)](https://sdk.vercel.ai/)
+[![Blaxel](https://img.shields.io/badge/Blaxel-platform-blue.svg)](https://blaxel.ai/)
 
-## Features
-- Generate engaging social media posts from URLs or themes
-- Web crawling capability for URL-based content
-- Customizable output format
-- Easy local development and deployment
-- Built-in integration with Blaxel platform
+</div>
 
-## Example Results
+A powerful AI agent that automatically generates engaging social media posts from URLs or themes. This template leverages web crawling capabilities, intelligent content analysis, and semantic search to create professional social media content. Built with TypeScript and the Vercel AI SDK for robust performance and seamless integration with the Blaxel platform.
 
-### URL-based Post Generation
-**Input:** https://blaxel.ai
+## 📑 Table of Contents
 
-**Output:**
-🚀 Ready to elevate your AI game? Blaxel is your all-in-one platform for building and deploying generative AI agents! With tools for Python and TypeScript, you can iterate, evaluate, and deploy seamlessly. Enjoy real-time monitoring, secure endpoints, and a user-friendly console. Start for free and explore plans tailored for developers and teams. Don't miss out—[get started today](https://app.blaxel.ai)!
+- [✨ Features](#features)
+- [🚀 Quick Start](#quick-start)
+- [📋 Prerequisites](#prerequisites)
+- [💻 Installation](#installation)
+- [🔧 Usage](#usage)
+  - [Running Locally](#running-locally)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+- [📁 Project Structure](#project-structure)
+- [❓ Troubleshooting](#troubleshooting)
+- [👥 Contributing](#contributing)
+- [🆘 Support](#support)
+- [📄 License](#license)
 
-### Theme-based Post Generation
-**Input:** MCP Server
+## ✨ Features
 
-**Output:**
-🚀 Ready to dive into the world of MCP Servers? The Model Context Protocol (MCP) allows developers to create servers that connect seamlessly with AI tools like Claude for Desktop. In a recent tutorial, you can learn to build a weather server that fetches alerts and forecasts using Python. This is a fantastic way to enhance your applications with real-time data! Check out the full guide and start building today! [Learn more here](https://modelcontextprotocol.io/quickstart/server).
+- Intelligent social media post generation from URLs or themes
+- Web crawling capability for extracting content from any website
+- Semantic search integration for theme-based content discovery
+- Professional social media content formatting with optimal character limits
+- Multi-step content processing with tool integration
+- Streaming responses for real-time interaction
+- TypeScript implementation with robust type safety
+- Custom web crawling function with markdown conversion
+- Easy deployment and integration with Blaxel platform
 
-## Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- **Node.js:** v18 or later.
-- **Blaxel CLI:** Ensure you have the Blaxel CLI installed. If not, install it globally:
+For those who want to get up and running quickly:
+
+```bash
+# Clone the repository
+git clone https://github.com/blaxel-ai/template-social-post-generator.git
+
+# Navigate to the project directory
+cd template-social-post-generator
+
+# Install dependencies
+npm install
+
+# Start the development server
+bl serve --hotreload
+
+# In another terminal, test the agent
+bl chat --local social-post-generator
+```
+
+## 📋 Prerequisites
+
+- **Node.js:** 18.0 or later
+- **[NPM](https://www.npmjs.com/):** Node package manager
+- **[Blaxel CLI](https://docs.blaxel.ai/Get-started):** Ensure you have the Blaxel CLI installed. If not, install it globally:
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
+  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=/usr/local/bin sudo -E sh
   ```
 - **Blaxel login:** Login to Blaxel platform
   ```bash
-    bl login YOUR-WORKSPACE
+  bl login YOUR-WORKSPACE
   ```
 
-### Installation
+## 💻 Installation
 
-- **Clone the repository and install the dependencies**:
+**Clone the repository and install dependencies:**
 
-  ```bash
-  git clone https://github.com/blaxel-ai/template-social-post-generator.git
-  cd template-social-post-generator
-  npm install
-  ```
-
-2. Install dependencies and start the server:
 ```bash
+git clone https://github.com/blaxel-ai/template-social-post-generator.git
+cd template-social-post-generator
 npm install
 ```
 
-
-## Running the Server Locally
-
-Start the development server with hot reloading using the Beamlit CLI command:
+**Verify installation:**
 
 ```bash
-bl serve --hotrealod
+npm run build
 ```
-_Note:_ This command starts the server and enables hot reload so that changes to the source code are automatically reflected.
+
+This command should complete without errors, confirming that TypeScript compilation and all dependencies are properly configured.
+
+## 🔧 Usage
+
+### Running Locally
+
+Start the development server with hot reloading:
 
 ```bash
-blaxel run agent my-agent --local --data '{"inputs":"MCP Server"}'
-OR
-blaxel chat my-agent --local
+bl serve --hotreload
 ```
 
-### Deploying to Blaxel
+For production build and run:
 
-#### Option 1: From Local Repository
 ```bash
-blaxel deploy
+bl serve
 ```
 
-#### Option 2: From GitHub
-1. Fork this repository
-2. Visit [app.blaxel.ai](https://app.blaxel.ai)
-3. Create a new agent and select "Import from GitHub"
-4. Connect and select your forked repository
+_Note:_ The development server automatically restarts when you make changes to the source code.
 
-## Project Structure
+### Testing
 
-Key files and directories:
-```
-src/
-├── agent.ts          # Agent entry point
-├── prompt.txt        # Main prompt template
-└── functions/        # Custom function definitions
-    └── webcrawl.ts   # Web crawling functionality
-documents/            # Sample documents for knowledge base
-.blaxel/              # Blaxel configuration files
-index.ts              # Main application entry point
-tsconfig.json         # TypeScript configuration
-package.json          # Project dependencies and scripts
+You can test your social post generator agent locally:
+
+```bash
+# Using the Blaxel CLI chat interface
+bl chat --local social-post-generator
 ```
 
-## Customization
+Example queries you can test:
 
-To customize the agent for your needs, focus on:
-- Modifying `src/prompt.txt` to adjust the post generation style
-- Extending `src/functions/` with additional capabilities
-- Updating `src/agent.ts` to add new features or modify the processing flow
+**URL-based Post Generation:**
+```
+https://blaxel.ai
+```
 
-## How it works
+**Theme-based Post Generation:**
+```
+MCP Server development
+```
 
-The agent processes inputs through a sophisticated pipeline to generate engaging social media posts:
+```
+Latest AI trends in 2024
+```
 
-1. **Input Processing**
-   - For URLs: Uses the `webcrawl` function to extract content directly from web pages
-   - For themes: Leverages `blaxel-search` to gather relevant, up-to-date information
+```
+TypeScript best practices
+```
 
-2. **Content Generation**
-   - Analyzes gathered content using advanced language models
-   - Structures posts following best practices for social media engagement
-   - Includes relevant emojis and hashtags when appropriate
+You can also run it directly with specific input:
 
-3. **Custom Functions**
-   - `webcrawl`: Extracts text content, metadata, and key information from web pages
-   - `blaxel-search`: Performs semantic web searches to gather contextual information
-   - Both functions can be monitored through the Blaxel workspace logs
+```bash
+bl run agent social-post-generator --local --data '{"input": "https://example.com"}'
+```
 
-4. **Execution Flow**
+### Deployment
+
+When you are ready to deploy your agent:
+
+```bash
+bl deploy
+```
+
+This command uses your code and the configuration in `blaxel.toml` to deploy your social post generator as an agent on the Blaxel platform.
+
+## 📁 Project Structure
+
+- **src/index.ts** - Main application entry point and Fastify server setup
+- **src/agent.ts** - Core agent implementation with AI SDK integration
+- **src/prompt.md** - System prompt defining post generation guidelines and constraints
+- **src/functions/webcrawl.ts** - Custom web crawling function with markdown conversion
+- **blaxel.toml** - Blaxel deployment configuration with search integration
+- **package.json** - NPM package configuration with scripts and dependencies
+- **tsconfig.json** - TypeScript compiler configuration
+- **LICENSE** - MIT license file
+
+## ❓ Troubleshooting
+
+### Common Issues
+
+1. **Blaxel Platform Issues**:
+   - Ensure you're logged in to your workspace: `bl login MY-WORKSPACE`
+   - Verify models are available: `bl get models`
+   - Check that functions exist: `bl get functions`
+
+2. **Web Crawling Issues**:
+   - Verify the URL is accessible and not behind authentication
+   - Check for rate limiting or anti-bot protections on target websites
+   - Ensure the website returns valid HTML content
+   - Check network connectivity and firewall restrictions
+
+3. **Content Generation Issues**:
+   - Verify the Blaxel search function is working: test with simple queries
+   - Check that the system prompt is being loaded correctly
+   - Ensure character limits are being respected (400 characters max)
+   - Verify that the AI model is responding appropriately
+
+4. **TypeScript and Build Issues**:
+   - Make sure you have Node.js 18+
+   - Try `npm install` to reinstall dependencies
+   - Check for TypeScript compilation errors with `npm run build`
+   - Verify all type definitions are properly installed
+
+5. **Dependency Issues**:
+   - Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
+   - Check for version conflicts in package.json
+   - Ensure all peer dependencies are satisfied
+   - Try updating dependencies: `npm update`
+
+For more help, please [submit an issue](https://github.com/blaxel-templates/template-social-post-generator/issues) on GitHub.
+
+## 👥 Contributing
+
+Contributions are welcome! Here's how you can contribute:
+
+1. **Fork** the repository
+2. **Create** a feature branch:
+   ```bash
+   git checkout -b feature/amazing-feature
    ```
-   Input → Content Gathering → Analysis → Post Generation → Output
+3. **Commit** your changes:
+   ```bash
+   git commit -m 'Add amazing feature'
    ```
+4. **Push** to the branch:
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Submit** a Pull Request
 
-The agent intelligently switches between URL processing and theme-based content generation based on the input type, ensuring optimal results for each use case.
+Please make sure to update tests as appropriate and follow the TypeScript code style of the project.
 
-## Contributing
+## 🆘 Support
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+If you need help with this template:
 
-## License
+- [Submit an issue](https://github.com/blaxel-templates/template-social-post-generator/issues) for bug reports or feature requests
+- Visit the [Blaxel Documentation](https://docs.blaxel.ai) for platform guidance
+- Check the [Vercel AI SDK Documentation](https://sdk.vercel.ai/) for framework-specific help
+- Review the [TypeScript Documentation](https://www.typescriptlang.org/docs/) for language guidance
+- Join our [Discord Community](https://discord.gg/G3NqzUPcHP) for real-time assistance
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
