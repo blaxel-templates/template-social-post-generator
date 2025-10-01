@@ -129,15 +129,15 @@ packages:
       zod: ^3.23.8
 
   '@blaxel/core@0.2.40':
-    resolution: {integrity: sha512-UkRe0/rmKX/1qXossIv1kAu728KINQKAcrFCsRjnLaOuHOBcAwEFEc3/Bf5TX6o8Jx27RL1Dfa/R4YA43JJAmA==}
+    resolution: {integrity: sha512-Avrmfh3vTmdJJhHXphfkX0uz4iB5i416W+0imH1AlY5TCczkrQT6i4M9N/GJtpJQqMW3DW7E7KJJaF+kKVEF8Q==}
     engines: {node: '>=18'}
 
   '@blaxel/telemetry@0.2.40':
-    resolution: {integrity: sha512-VhDvUFMBF1uPRtRrkDHS8v59Jv/aw4fOzi9g53QbKK0T2p65XSvF+mezDLYHFvmOMLz44muUGEgwxPHXOdxAMw==}
+    resolution: {integrity: sha512-5LyyKDfGAENSMLCREFGeSSI/YiDfh0SFolRZxEMGqkOp6aQG4eOb4DcGjD8/hnUNF5u3qhYPMutI5P0/5dOzbg==}
     engines: {node: '>=18'}
 
   '@blaxel/vercel@0.2.40':
-    resolution: {integrity: sha512-zJbPz37/bm936jyhidCs9E3asfYaCjScktzr2FS/8j5zsa1KDikvYd4RO4/9Sw8pUmwOVWDKpfM6im9gCGfutQ==}
+    resolution: {integrity: sha512-oEMXJN8HMKfP3Rd9wfnl02Wgsfmkkz+j+TrM5/KZdgY6ZRpxPRxCx7OxwwPBoVzl1VRug0p/Ekyskj/OFNMwKg==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.2':
