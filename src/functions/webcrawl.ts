@@ -2,7 +2,7 @@ import { tool } from "ai";
 import axios from "axios";
 //@ts-ignore
 import TurndownService from "turndown";
-import z from "zod";
+import { z } from "zod";
 
 /*
   This tool crawls web pages and converts their content to markdown format.
@@ -19,7 +19,7 @@ import z from "zod";
 */
 export const webcrawl = tool({
   description: "Crawl a website and return the content in markdown format",
-  parameters: z.object({
+  inputSchema: z.object({
     url: z.string().describe("The URL of the website to crawl"),
   }),
   execute: async (args: { url: string }) => {
