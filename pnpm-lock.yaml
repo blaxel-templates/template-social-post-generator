@@ -12,14 +12,14 @@ importers:
         specifier: ^2.0.58
         version: 2.0.58(zod@4.1.12)
       '@blaxel/core':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
       '@blaxel/telemetry':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)
       '@blaxel/vercel':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)
       '@opentelemetry/instrumentation-fastify':
         specifier: ^0.45.0
         version: 0.45.0(@opentelemetry/api@1.9.0)
@@ -112,16 +112,16 @@ packages:
     resolution: {integrity: sha512-6o7Y2SeO9vFKB8lArHXehNuusnpddKPk7xqL7T2/b+OvXMRIXUO1rR4wcv1hAFUAT9avGZshty3Wlua/XA7TvA==}
     engines: {node: '>=18'}
 
-  '@blaxel/core@0.2.46':
-    resolution: {integrity: sha512-8YqnIsvVPPsryvd2T55k+vjx27Nfo5u3M3YvJKWE89oNedMKrkzBCUh7+hg4kM1yRtuUZxCC4RNsknk93xQhaw==}
+  '@blaxel/core@0.2.47':
+    resolution: {integrity: sha512-RG8skubFdneXFtEcA7rsEPsL9GipKN1zntmQevjoHm+dxPFbEkUA61j5BqSaCxGlTLeuOrsWTfXR9wrokcoTwg==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.2.46':
-    resolution: {integrity: sha512-Nl7ATR1KS7Gp6vrn/UG6FhAydmMtwrF9aOkWte1DQIgjI0WmbjOR24sGY3078g0BPsyxUCAB0CHLkqsd8tOr8Q==}
+  '@blaxel/telemetry@0.2.47':
+    resolution: {integrity: sha512-k6vN2llwXnpL633OVXWIlvEtcvpabtpinWSD85hfah6kRU6X5pIdCaoPRdgMl2N/ixYdVNLOYB7mcxwQV/S9MA==}
     engines: {node: '>=18'}
 
-  '@blaxel/vercel@0.2.46':
-    resolution: {integrity: sha512-cmg0iVY6fzV71KXDkxFuIO09jHDalU/sDDzJBNyfm2jbiwS87nEfXSRVSsb9yIjtOu2Zhtih9K09ID21zAOMuw==}
+  '@blaxel/vercel@0.2.47':
+    resolution: {integrity: sha512-ovZkCyZecfU42y/inH20pkjhmLbBndIkYovwNMiVKl3y79sX8Y+bWd91NJjUZ2dlzaz4Vo3hAju013cSfCMISQ==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.2':
@@ -1404,7 +1404,7 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@blaxel/core@0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))':
+  '@blaxel/core@0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
       '@modelcontextprotocol/sdk': 1.20.2
@@ -1424,14 +1424,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/telemetry@0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)':
+  '@blaxel/telemetry@0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.39(zod@4.1.12)
       '@ai-sdk/cerebras': 1.0.27(zod@4.1.12)
       '@ai-sdk/google': 2.0.25(zod@4.1.12)
       '@ai-sdk/groq': 2.0.26(zod@4.1.12)
       '@ai-sdk/openai': 2.0.58(zod@4.1.12)
-      '@blaxel/core': 0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
+      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.0)
@@ -1453,7 +1453,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@blaxel/vercel@0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)':
+  '@blaxel/vercel@0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))(zod@4.1.12)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.39(zod@4.1.12)
       '@ai-sdk/cerebras': 1.0.27(zod@4.1.12)
@@ -1462,7 +1462,7 @@ snapshots:
       '@ai-sdk/groq': 2.0.26(zod@4.1.12)
       '@ai-sdk/openai': 2.0.58(zod@4.1.12)
       '@ai-sdk/provider': 2.0.0
-      '@blaxel/core': 0.2.46(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
+      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.0(typescript@5.8.3))
       ai: 5.0.82(zod@4.1.12)
     transitivePeerDependencies:
       - '@hey-api/openapi-ts'
